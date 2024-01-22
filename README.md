@@ -23,3 +23,6 @@ Is D Frequency|	是否D频| X
 Transmission Power|	参考信号功率|	T
 Uplink Traffic|	上行流量(MB)|	Y
 Downlink Traffic|	下行流量(MB)|	Y
+We predicted the values for 96 points (one day) after adjustment. The experiments were conducted on Nvidia RTX 4090 GPU. To train the CDVD model, the learning rate is set to 0.0001, the training batch size is set
+to 32, and the training epoch is set to 20. we used Adam as our optimizer. The encoder and decoder in representation learning module is BiLSTM network with three layers. The dropout rate is set to 0.1. We implemented the algorithms by the PyTorch framework. 
+The experiment verified the accuracy and robustness of the CDVD model in estimating the effects of parameter adjustments. The proposed CDVD has implication for practice and can provide support for wireless network optimization.
